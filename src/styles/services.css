@@ -1,0 +1,160 @@
+/* ───────── Services Page Container ───────── */
+.services-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+/* HeroSection is assumed to already be styled globally */
+
+/* ───────── All Services Section ───────── */
+.all-services {
+  padding: 60px 20px;
+  background-color: #fdf7f0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #8b0000;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #a0522d;
+  margin: 10px auto;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* ───────── Service Grid ───────── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ───────── Service Info Section ───────── */
+.service-info {
+  padding: 60px 20px;
+  background-color: #fff6ea;
+}
+
+.service-info h3 {
+  font-size: 28px;
+  text-align: center;
+  color: #8b0000;
+  margin-bottom: 40px;
+}
+
+/* ───────── Info Grid (updated) ───────── */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* ───────── Info Item (updated) ───────── */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #f0dfce;
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ───────── Icon (updated for Om centering) ───────── */
+.info-icon {
+  font-size: 36px;
+  color: #a0522d;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  line-height: 1;
+}
+
+/* Special centering fix for the Om symbol */
+.vedic-icon {
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: justify;
+  width: 100%;
+}
+
+/* ───────── Text inside card ───────── */
+.info-item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #8b0000;
+  line-height: 1.4;
+}
+
+.info-item p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* ───────── Responsive tweaks ───────── */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .service-info h3 {
+    font-size: 24px;
+  }
+
+  .info-item {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-icon {
+    font-size: 32px;
+  }
+
+  .info-item h4 {
+    font-size: 18px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+  }
+}

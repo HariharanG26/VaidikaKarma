@@ -1,0 +1,199 @@
+/* General Styles */
+.book-pooja-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6f0;
+    color: #333;
+  }
+  
+  /* Booking Container */
+  .booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  /* Tabs */
+  .booking-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+  
+  .tab-btn {
+    padding: 12px 24px;
+    border: none;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active,
+  .tab-btn:hover {
+    background-color: #a0522d;
+    color: #fff;
+  }
+  
+  /* Popular Poojas Section */
+  .popular-poojas-section h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 10px;
+  }
+  
+  .popular-poojas-section .subtitle {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .poojas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .pooja-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .pooja-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pooja-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .pooja-details {
+    padding: 20px;
+  }
+  
+  .pooja-details h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #a0522d;
+  }
+  
+  .pooja-details .description {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .pooja-meta {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .pooja-meta i {
+    margin-right: 5px;
+  }
+  
+  .best-for h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .best-for ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .book-now-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #8b4513;
+  }
+  
+  /* Booking Process Section */
+  .booking-process {
+    background-color: #fff7ed;
+    padding: 60px 20px;
+  }
+  
+  .booking-process h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #8b0000;
+    margin-bottom: 40px;
+  }
+  
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .step {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+  
+  .step-icon {
+    font-size: 32px;
+    color: #a0522d;
+    margin-bottom: 15px;
+  }
+  
+  .step h4 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .tab-btn {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  
+    .pooja-details {
+      padding: 15px;
+    }
+  
+    .book-now-btn {
+      font-size: 13px;
+      padding: 8px 16px;
+    }
+  
+    .step-icon {
+      font-size: 28px;
+    }
+  
+    .step h4 {
+      font-size: 16px;
+    }
+  }
+  

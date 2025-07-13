@@ -1,0 +1,161 @@
+/* ───────── Home Page Container ───────── */
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefdfb;
+  color: #333;
+  padding-bottom: 60px;
+}
+
+/* ───────── Section Titles ───────── */
+section h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #8b0000;
+  margin: 60px 0 30px;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #a0522d;
+  margin: 10px auto 0;
+}
+
+/* ───────── Services Section ───────── */
+.services-section {
+  padding: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ───────── Purohits Section ───────── */
+.purohits-section {
+  padding: 20px;
+  background-color: #f7f2ed;
+}
+
+/* Center the single full‑width card */
+.purohits-grid {
+  display: flex;                /* overrides previous grid */
+  justify-content: center;
+}
+
+.purohit-card {
+  width: 100%;
+  max-width: 920px;             /* keep it elegant on large screens */
+}
+
+/* ───────── Testimonials Section ───────── */
+.testimonials-section {
+  padding: 20px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ───────── CTA Section ───────── */
+.cta-section {
+  text-align: center;
+  background-color: #fff0e6;
+  padding: 50px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #f1ddd0;
+}
+
+.cta-section h3 {
+  font-size: 26px;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #a0522d;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #8b4513;
+}
+
+/* ───────── Responsive Tweaks ───────── */
+@media (max-width: 1024px) {
+  section h2 {
+    font-size: 28px;
+  }
+
+  .cta-section h3 {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    padding: 12px 26px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 26px;
+  }
+
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  /* Purohit card already stacks image/text via its own media query */
+  .cta-section h3 {
+    font-size: 22px;
+  }
+
+  .cta-button {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 22px;
+  }
+
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .cta-section h3 {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
