@@ -1,0 +1,214 @@
+/* =========================================================================
+   Footer Stylesheet  ―  footer.css
+   Fully refreshed  •  2025‑07‑07
+   ========================================================================= */
+
+/* ========= 1. Footer Container ========= */
+.footer {
+  background-color: #2c3e50;          /* navy‑slate */
+  color: #ffffff;
+  padding: 60px 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.footer-col {
+  padding: 0 15px;
+}
+
+/* ========= 2. Headings / Body Copy ========= */
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: #8e44ad;              /* violet accent */
+}
+
+.footer-col p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* ========= 3. Social Links ========= */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #8e44ad;
+  transform: translateY(-3px);
+}
+
+/* ========= 4. Footer Navigation Lists ========= */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 15px;
+}
+
+.footer-col ul li a {
+  color: #bdc3c7;
+  display: block;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+/* =========================================================================
+   5. Contact‑Info Card  ―  Completely Re‑engineered
+   ========================================================================= */
+.footer .contact-info {
+  background-color: #fffaf5;            /* warm off‑white */
+  color: #333;
+  border-radius: 16px;
+  padding: 24px 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* optional hover‑lift */
+.footer .contact-info:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* UL RESET —— ensures no default spacing */
+.footer .contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* 👇 The magic: treat the list as a vertical flex column
+     with a consistent gap, so no huge blank areas appear */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;                /* controls vertical spacing */
+}
+
+/* Each LI: icon + text side‑by‑side */
+.footer .contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;          /* easy to read */
+}
+
+/* Icon column */
+.footer .contact-info i {
+  flex-shrink: 0;
+  width: 22px;              /* consistent left column width */
+  text-align: center;
+  font-size: 1.05rem;
+  color: #8e44ad;
+  line-height: 1;           /* eliminates phantom extra height */
+}
+
+/* Text / link */
+.footer .contact-info span,
+.footer .contact-info a {
+  flex: 1 1 auto;           /* take remaining width */
+  color: #333 !important;
+  line-height: 1.45;
+  word-break: break-word;
+  text-decoration: none;
+}
+
+/* Link hover accent */
+.footer .contact-info a:hover {
+  color: #8e44ad !important;
+}
+
+/* =========================================================================
+   6. Copyright Bar
+   ========================================================================= */
+.copyright {
+  background-color: #1a252f;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.copyright .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.legal-links a {
+  color: #bdc3c7;
+  transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+/* ========= 7. Responsive Tweaks ========= */
+@media (max-width: 768px) {
+  /* copyright strip stacking */
+  .copyright .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .legal-links {
+    margin-top: 15px;
+  }
+
+  /* slightly tighter card */
+  .footer .contact-info {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .footer .contact-info ul {
+    gap: 10px;
+  }
+  .footer .contact-info i {
+    width: 20px;
+  }
+}

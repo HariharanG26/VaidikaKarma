@@ -1,0 +1,341 @@
+/* General Styles */
+.dashboard-page {
+    padding: 30px 20px;
+    background-color: #fffaf5;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  .dashboard-header h2 {
+    font-size: 32px;
+    color: #8b0000;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-header p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Tabs */
+  .dashboard-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .tab-btn {
+    padding: 10px 20px;
+    background-color: #f5e7d5;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .tab-btn:hover,
+  .tab-btn.active {
+    background-color: #a0522d;
+    color: white;
+  }
+  
+  /* Content Area */
+  .dashboard-content {
+    margin-top: 20px;
+  }
+  
+  /* Booking Cards */
+  .bookings-section {
+    margin-bottom: 50px;
+  }
+  
+  .bookings-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #8b0000;
+  }
+  
+  .bookings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .booking-card {
+    background-color: white;
+    border: 1px solid #f0dfce;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .booking-id {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .booking-details h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .booking-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+  }
+  
+  .booking-status {
+    margin-top: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .booking-status.confirmed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .booking-status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .booking-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .action-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-btn.view {
+    background-color: #8b0000;
+    color: white;
+  }
+  
+  .action-btn.cancel {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .action-btn.review {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  /* Rating Stars */
+  .booking-rating .fa-star {
+    color: #ccc;
+    margin-right: 3px;
+  }
+  
+  .booking-rating .filled {
+    color: #f4b400;
+  }
+  
+  /* Review */
+  .booking-review {
+    font-style: italic;
+    color: #444;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* No Bookings */
+  .no-bookings {
+    background-color: #fff5e6;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .book-now-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #a0522d;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Profile Section */
+  .profile-section h3 {
+    font-size: 22px;
+    color: #8b0000;
+    margin-bottom: 20px;
+  }
+  
+  .profile-form {
+    max-width: 600px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .save-btn {
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Settings Section */
+  .settings-section h3 {
+    font-size: 22px;
+    color: #8b0000;
+    margin-bottom: 30px;
+  }
+  
+  .settings-card {
+    background-color: #fff;
+    border: 1px solid #f0dfce;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .settings-card h4 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .password-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .change-password-btn {
+    padding: 8px 16px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .notification-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-container {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 3px;
+  }
+  
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #a0522d;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .save-preferences-btn {
+    padding: 8px 16px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .dashboard-tabs {
+      flex-direction: column;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  

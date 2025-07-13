@@ -1,0 +1,123 @@
+/* Main Page Wrapper */
+.purohits-page {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffdf7;
+    color: #333;
+  }
+  
+  /* All Purohits Section */
+  .all-purohits {
+    padding: 60px 20px;
+    background-color: #fdf7f0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: #8b0000;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #a0522d;
+    margin: 10px auto;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Purohits Grid */
+  .purohits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  /* Purohit Selection Section */
+  .purohit-selection {
+    padding: 60px 20px;
+    background-color: #fff6ea;
+  }
+  
+  .purohit-selection h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 40px;
+  }
+  
+  /* Selection Steps */
+  .selection-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .step {
+    background-color: white;
+    border: 1px solid #f0dfce;
+    padding: 25px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step-number {
+    background-color: #a0522d;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  .step h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #8b0000;
+  }
+  
+  .step p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 26px;
+    }
+  
+    .purohit-selection h3 {
+      font-size: 24px;
+    }
+  
+    .step-number {
+      font-size: 18px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+  
