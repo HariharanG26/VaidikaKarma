@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/HariharanG26/VaidikaKarma/static/css/main.563bbbf9.css",
-    "main.js": "/HariharanG26/VaidikaKarma/static/js/main.b5107cca.js",
-    "static/js/453.8879f0b6.chunk.js": "/HariharanG26/VaidikaKarma/static/js/453.8879f0b6.chunk.js",
-    "static/media/logo.png": "/HariharanG26/VaidikaKarma/static/media/logo.abb0546498481176dbfc.png",
-    "index.html": "/HariharanG26/VaidikaKarma/index.html",
-    "main.563bbbf9.css.map": "/HariharanG26/VaidikaKarma/static/css/main.563bbbf9.css.map",
-    "main.b5107cca.js.map": "/HariharanG26/VaidikaKarma/static/js/main.b5107cca.js.map",
-    "453.8879f0b6.chunk.js.map": "/HariharanG26/VaidikaKarma/static/js/453.8879f0b6.chunk.js.map"
+    "main.css": "/VaidikaKarma/static/css/main.563bbbf9.css",
+    "main.js": "/VaidikaKarma/static/js/main.3f9ca496.js",
+    "static/js/453.8879f0b6.chunk.js": "/VaidikaKarma/static/js/453.8879f0b6.chunk.js",
+    "static/media/logo.png": "/VaidikaKarma/static/media/logo.abb0546498481176dbfc.png",
+    "index.html": "/VaidikaKarma/index.html",
+    "main.563bbbf9.css.map": "/VaidikaKarma/static/css/main.563bbbf9.css.map",
+    "main.3f9ca496.js.map": "/VaidikaKarma/static/js/main.3f9ca496.js.map",
+    "453.8879f0b6.chunk.js.map": "/VaidikaKarma/static/js/453.8879f0b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.563bbbf9.css",
-    "static/js/main.b5107cca.js"
+    "static/js/main.3f9ca496.js"
   ]
 }
